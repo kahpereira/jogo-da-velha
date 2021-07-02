@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
+  <title>Desafio 2 - Jogo da Velha</title>
+</head>
+
+<body>
+  <main>
+    <h1>Jogo da Velha</h1>
+    <div class="players">
+      <p>Jogador 1: X</p>
+      <div></div>
+      <p>Jogador 2: O</p>
+    </div>
+    <section class="linhas">
+      <div class="casas" id="c1"></div>
+      <div class="casas" id="c2"></div>
+      <div class="casas" id="c3"></div>
+    </section>
+    <section class="linhas">
+      <div class="casas" id="c4"></div>
+      <div class="casas" id="c5"></div>
+      <div class="casas" id="c6"></div>
+    </section>
+    <section class="linhas">
+      <div class="casas" id="c7"></div>
+      <div class="casas" id="c8"></div>
+      <div class="casas" id="c9"></div>
+    </section>
+    <input type="reset" value="Reiniciar" id="reset" onClick="restart();">
+  </main>
+  <script src="./script.js"></script>
+</body>
+
+</html>

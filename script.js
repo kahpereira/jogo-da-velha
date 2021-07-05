@@ -26,11 +26,13 @@ document.addEventListener("click", function (event) {
 
 function jogar(id) {
   const casa = document.getElementById(id);
-  jogada = checaTurno ? jogador1 : jogador2;
-  casa.textContent = jogada;
-  casa.classList.add(jogada);
-  casa.style.backgroundColor = "#000";
-  checaVencedor(jogada);
+  if (!casa.textContent){
+    jogada = checaTurno ? jogador1 : jogador2;
+    casa.textContent = jogada;
+    casa.classList.add(jogada);
+    casa.style.backgroundColor = "#000";
+    checaVencedor(jogada);
+  }
 }
 
 function checaVencedor(jogada) {
